@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>01-开闭原则.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>DesignPrinciple.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>

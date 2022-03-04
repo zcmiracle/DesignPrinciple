@@ -13,7 +13,20 @@
 		B39D374927D20E5800614014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39D374727D20E5800614014 /* Main.storyboard */; };
 		B39D374B27D20E6200614014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39D374A27D20E6200614014 /* Assets.xcassets */; };
 		B39D374E27D20E6200614014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39D374C27D20E6200614014 /* LaunchScreen.storyboard */; };
+		B39D375E27D20EEB00614014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D375D27D20EEB00614014 /* main.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B39D375927D20EEB00614014 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B39D373E27D20E5800614014 /* DesignPrinciple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPrinciple.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,19 @@
 		B39D374A27D20E6200614014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B39D374D27D20E6200614014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B39D374F27D20E6200614014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39D375B27D20EEB00614014 /* 01-开闭原则 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-开闭原则"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39D375D27D20EEB00614014 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B39D373B27D20E5800614014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39D375827D20EEB00614014 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				B39D374027D20E5800614014 /* DesignPrinciple */,
+				B39D375C27D20EEB00614014 /* 01-开闭原则 */,
 				B39D373F27D20E5800614014 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				B39D373E27D20E5800614014 /* DesignPrinciple.app */,
+				B39D375B27D20EEB00614014 /* 01-开闭原则 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +89,14 @@
 				B39D374F27D20E6200614014 /* Info.plist */,
 			);
 			path = DesignPrinciple;
+			sourceTree = "<group>";
+		};
+		B39D375C27D20EEB00614014 /* 01-开闭原则 */ = {
+			isa = PBXGroup;
+			children = (
+				B39D375D27D20EEB00614014 /* main.swift */,
+			);
+			path = "01-开闭原则";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,23 @@
 			productReference = B39D373E27D20E5800614014 /* DesignPrinciple.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B39D375A27D20EEB00614014 /* 01-开闭原则 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B39D376127D20EEB00614014 /* Build configuration list for PBXNativeTarget "01-开闭原则" */;
+			buildPhases = (
+				B39D375727D20EEB00614014 /* Sources */,
+				B39D375827D20EEB00614014 /* Frameworks */,
+				B39D375927D20EEB00614014 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-开闭原则";
+			productName = "01-开闭原则";
+			productReference = B39D375B27D20EEB00614014 /* 01-开闭原则 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +146,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					B39D373D27D20E5800614014 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					B39D375A27D20EEB00614014 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -115,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				B39D373D27D20E5800614014 /* DesignPrinciple */,
+				B39D375A27D20EEB00614014 /* 01-开闭原则 */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +193,14 @@
 				B39D374627D20E5800614014 /* ViewController.swift in Sources */,
 				B39D374227D20E5800614014 /* AppDelegate.swift in Sources */,
 				B39D374427D20E5800614014 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39D375727D20EEB00614014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39D375E27D20EEB00614014 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +380,32 @@
 			};
 			name = Release;
 		};
+		B39D375F27D20EEB00614014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B39D376027D20EEB00614014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +423,15 @@
 			buildConfigurations = (
 				B39D375327D20E6200614014 /* Debug */,
 				B39D375427D20E6200614014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B39D376127D20EEB00614014 /* Build configuration list for PBXNativeTarget "01-开闭原则" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39D375F27D20EEB00614014 /* Debug */,
+				B39D376027D20EEB00614014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
