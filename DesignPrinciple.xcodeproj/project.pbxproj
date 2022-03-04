@@ -18,6 +18,7 @@
 		B39D377927D21F9300614014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D377827D21F9300614014 /* main.swift */; };
 		B39D378827D2226400614014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D378727D2226400614014 /* main.swift */; };
 		B39D379227D223C700614014 /* main1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D379127D223C700614014 /* main1.swift */; };
+		B39D379F27D227CE00614014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D379E27D227CE00614014 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		B39D379A27D227CE00614014 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +87,8 @@
 		B39D378527D2226400614014 /* 04-接口隔离原则 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04-接口隔离原则"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39D378727D2226400614014 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B39D379127D223C700614014 /* main1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main1.swift; sourceTree = "<group>"; };
+		B39D379C27D227CE00614014 /* 05-依赖倒置原则 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "05-依赖倒置原则"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39D379E27D227CE00614014 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B39D379927D227CE00614014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,6 +145,7 @@
 				B39D376927D21D5D00614014 /* 02-里式替换原则 */,
 				B39D377727D21F9300614014 /* 03-单一职责原则 */,
 				B39D378627D2226400614014 /* 04-接口隔离原则 */,
+				B39D379D27D227CE00614014 /* 05-依赖倒置原则 */,
 				B39D373F27D20E5800614014 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,6 +158,7 @@
 				B39D376827D21D5D00614014 /* 02-里式替换原则 */,
 				B39D377627D21F9300614014 /* 03-单一职责原则 */,
 				B39D378527D2226400614014 /* 04-接口隔离原则 */,
+				B39D379C27D227CE00614014 /* 05-依赖倒置原则 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +208,14 @@
 				B39D379127D223C700614014 /* main1.swift */,
 			);
 			path = "04-接口隔离原则";
+			sourceTree = "<group>";
+		};
+		B39D379D27D227CE00614014 /* 05-依赖倒置原则 */ = {
+			isa = PBXGroup;
+			children = (
+				B39D379E27D227CE00614014 /* main.swift */,
+			);
+			path = "05-依赖倒置原则";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +306,23 @@
 			productReference = B39D378527D2226400614014 /* 04-接口隔离原则 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B39D379B27D227CE00614014 /* 05-依赖倒置原则 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B39D37A027D227CE00614014 /* Build configuration list for PBXNativeTarget "05-依赖倒置原则" */;
+			buildPhases = (
+				B39D379827D227CE00614014 /* Sources */,
+				B39D379927D227CE00614014 /* Frameworks */,
+				B39D379A27D227CE00614014 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "05-依赖倒置原则";
+			productName = "05-依赖倒置原则";
+			productReference = B39D379C27D227CE00614014 /* 05-依赖倒置原则 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,6 +347,9 @@
 					B39D378427D2226400614014 = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					B39D379B27D227CE00614014 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = B39D373927D20E5800614014 /* Build configuration list for PBXProject "DesignPrinciple" */;
@@ -321,6 +370,7 @@
 				B39D376727D21D5D00614014 /* 02-里式替换原则 */,
 				B39D377527D21F9300614014 /* 03-单一职责原则 */,
 				B39D378427D2226400614014 /* 04-接口隔离原则 */,
+				B39D379B27D227CE00614014 /* 05-依赖倒置原则 */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +429,14 @@
 			files = (
 				B39D379227D223C700614014 /* main1.swift in Sources */,
 				B39D378827D2226400614014 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39D379827D227CE00614014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39D379F27D227CE00614014 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +720,32 @@
 			};
 			name = Release;
 		};
+		B39D37A127D227CE00614014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B39D37A227D227CE00614014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -715,6 +799,15 @@
 			buildConfigurations = (
 				B39D378A27D2226400614014 /* Debug */,
 				B39D378B27D2226400614014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B39D37A027D227CE00614014 /* Build configuration list for PBXNativeTarget "05-依赖倒置原则" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39D37A127D227CE00614014 /* Debug */,
+				B39D37A227D227CE00614014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
