@@ -16,6 +16,8 @@
 		B39D375E27D20EEB00614014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D375D27D20EEB00614014 /* main.swift */; };
 		B39D376B27D21D5D00614014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D376A27D21D5D00614014 /* main.swift */; };
 		B39D377927D21F9300614014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D377827D21F9300614014 /* main.swift */; };
+		B39D378827D2226400614014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D378727D2226400614014 /* main.swift */; };
+		B39D379227D223C700614014 /* main1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D379127D223C700614014 /* main1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +48,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		B39D378327D2226400614014 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +74,9 @@
 		B39D376A27D21D5D00614014 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B39D377627D21F9300614014 /* 03-单一职责原则 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-单一职责原则"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39D377827D21F9300614014 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B39D378527D2226400614014 /* 04-接口隔离原则 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04-接口隔离原则"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39D378727D2226400614014 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B39D379127D223C700614014 /* main1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B39D378227D2226400614014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +125,7 @@
 				B39D375C27D20EEB00614014 /* 01-开闭原则 */,
 				B39D376927D21D5D00614014 /* 02-里式替换原则 */,
 				B39D377727D21F9300614014 /* 03-单一职责原则 */,
+				B39D378627D2226400614014 /* 04-接口隔离原则 */,
 				B39D373F27D20E5800614014 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +137,7 @@
 				B39D375B27D20EEB00614014 /* 01-开闭原则 */,
 				B39D376827D21D5D00614014 /* 02-里式替换原则 */,
 				B39D377627D21F9300614014 /* 03-单一职责原则 */,
+				B39D378527D2226400614014 /* 04-接口隔离原则 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +178,15 @@
 				B39D377827D21F9300614014 /* main.swift */,
 			);
 			path = "03-单一职责原则";
+			sourceTree = "<group>";
+		};
+		B39D378627D2226400614014 /* 04-接口隔离原则 */ = {
+			isa = PBXGroup;
+			children = (
+				B39D378727D2226400614014 /* main.swift */,
+				B39D379127D223C700614014 /* main1.swift */,
+			);
+			path = "04-接口隔离原则";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +260,23 @@
 			productReference = B39D377627D21F9300614014 /* 03-单一职责原则 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B39D378427D2226400614014 /* 04-接口隔离原则 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B39D378927D2226400614014 /* Build configuration list for PBXNativeTarget "04-接口隔离原则" */;
+			buildPhases = (
+				B39D378127D2226400614014 /* Sources */,
+				B39D378227D2226400614014 /* Frameworks */,
+				B39D378327D2226400614014 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "04-接口隔离原则";
+			productName = "04-接口隔离原则";
+			productReference = B39D378527D2226400614014 /* 04-接口隔离原则 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +298,9 @@
 					B39D377527D21F9300614014 = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					B39D378427D2226400614014 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = B39D373927D20E5800614014 /* Build configuration list for PBXProject "DesignPrinciple" */;
@@ -268,6 +320,7 @@
 				B39D375A27D20EEB00614014 /* 01-开闭原则 */,
 				B39D376727D21D5D00614014 /* 02-里式替换原则 */,
 				B39D377527D21F9300614014 /* 03-单一职责原则 */,
+				B39D378427D2226400614014 /* 04-接口隔离原则 */,
 			);
 		};
 /* End PBXProject section */
@@ -317,6 +370,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39D377927D21F9300614014 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39D378127D2226400614014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39D379227D223C700614014 /* main1.swift in Sources */,
+				B39D378827D2226400614014 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +636,32 @@
 			};
 			name = Release;
 		};
+		B39D378A27D2226400614014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B39D378B27D2226400614014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -618,6 +706,15 @@
 			buildConfigurations = (
 				B39D377B27D21F9300614014 /* Debug */,
 				B39D377C27D21F9300614014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B39D378927D2226400614014 /* Build configuration list for PBXNativeTarget "04-接口隔离原则" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39D378A27D2226400614014 /* Debug */,
+				B39D378B27D2226400614014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

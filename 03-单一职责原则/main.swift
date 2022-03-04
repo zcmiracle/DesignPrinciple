@@ -21,13 +21,13 @@ class UserInterface {
     
     func show() {
         self.loadBannerData()
-        self.listData()
+        self.loadListData()
         print("展示界面：\(self.bannerData!), \(self.listData!)")
     }
 }
 
 let ui = UserInterface1()
-ui1.show()
+ui.show()
 
 
 // 单一职责原则
@@ -58,7 +58,7 @@ class UserInterface1 {
 }
 
 let ui1 = UserInterface1()
-ui.show()
+ui1.show()
 
 
 
