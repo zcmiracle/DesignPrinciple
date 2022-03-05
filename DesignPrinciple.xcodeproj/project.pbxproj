@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AD16E4B27D303F700231AC9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD16E4A27D303F700231AC9 /* main.swift */; };
 		B39D374227D20E5800614014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D374127D20E5800614014 /* AppDelegate.swift */; };
 		B39D374427D20E5800614014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D374327D20E5800614014 /* SceneDelegate.swift */; };
 		B39D374627D20E5800614014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D374527D20E5800614014 /* ViewController.swift */; };
@@ -22,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		8AD16E4627D303F700231AC9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B39D375927D20EEB00614014 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +80,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8AD16E4827D303F700231AC9 /* 06-迪米特法则 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "06-迪米特法则"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD16E4A27D303F700231AC9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B39D373E27D20E5800614014 /* DesignPrinciple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPrinciple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39D374127D20E5800614014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39D374327D20E5800614014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +104,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8AD16E4527D303F700231AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B39D373B27D20E5800614014 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +156,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AD16E4927D303F700231AC9 /* 06-迪米特法则 */ = {
+			isa = PBXGroup;
+			children = (
+				8AD16E4A27D303F700231AC9 /* main.swift */,
+			);
+			path = "06-迪米特法则";
+			sourceTree = "<group>";
+		};
 		B39D373527D20E5800614014 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +173,7 @@
 				B39D377727D21F9300614014 /* 03-单一职责原则 */,
 				B39D378627D2226400614014 /* 04-接口隔离原则 */,
 				B39D379D27D227CE00614014 /* 05-依赖倒置原则 */,
+				8AD16E4927D303F700231AC9 /* 06-迪米特法则 */,
 				B39D373F27D20E5800614014 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,6 +187,7 @@
 				B39D377627D21F9300614014 /* 03-单一职责原则 */,
 				B39D378527D2226400614014 /* 04-接口隔离原则 */,
 				B39D379C27D227CE00614014 /* 05-依赖倒置原则 */,
+				8AD16E4827D303F700231AC9 /* 06-迪米特法则 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,6 +250,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8AD16E4727D303F700231AC9 /* 06-迪米特法则 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD16E4E27D303F700231AC9 /* Build configuration list for PBXNativeTarget "06-迪米特法则" */;
+			buildPhases = (
+				8AD16E4427D303F700231AC9 /* Sources */,
+				8AD16E4527D303F700231AC9 /* Frameworks */,
+				8AD16E4627D303F700231AC9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "06-迪米特法则";
+			productName = "06-迪米特法则";
+			productReference = 8AD16E4827D303F700231AC9 /* 06-迪米特法则 */;
+			productType = "com.apple.product-type.tool";
+		};
 		B39D373D27D20E5800614014 /* DesignPrinciple */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B39D375227D20E6200614014 /* Build configuration list for PBXNativeTarget "DesignPrinciple" */;
@@ -329,9 +375,12 @@
 		B39D373627D20E5800614014 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					8AD16E4727D303F700231AC9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					B39D373D27D20E5800614014 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -371,6 +420,7 @@
 				B39D377527D21F9300614014 /* 03-单一职责原则 */,
 				B39D378427D2226400614014 /* 04-接口隔离原则 */,
 				B39D379B27D227CE00614014 /* 05-依赖倒置原则 */,
+				8AD16E4727D303F700231AC9 /* 06-迪米特法则 */,
 			);
 		};
 /* End PBXProject section */
@@ -389,6 +439,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8AD16E4427D303F700231AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD16E4B27D303F700231AC9 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B39D373A27D20E5800614014 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,6 +520,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8AD16E4C27D303F700231AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8AD16E4D27D303F700231AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B39D375027D20E6200614014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -749,6 +833,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8AD16E4E27D303F700231AC9 /* Build configuration list for PBXNativeTarget "06-迪米特法则" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD16E4C27D303F700231AC9 /* Debug */,
+				8AD16E4D27D303F700231AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B39D373927D20E5800614014 /* Build configuration list for PBXProject "DesignPrinciple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
